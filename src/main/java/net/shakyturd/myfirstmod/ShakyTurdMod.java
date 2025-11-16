@@ -109,6 +109,8 @@ public class ShakyTurdMod {
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
             event.accept(ModItems.ZIPLINE);
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+            event.accept(ModBlocks.ANCHOR);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
