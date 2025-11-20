@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.shakyturd.myfirstmod.ShakyTurdMod;
+import net.shakyturd.myfirstmod.item.custom.ZiplineItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -13,7 +14,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> ZIPLINE = ITEMS.register("zipline",
-        () -> new Item(new Item.Properties()));
+        () -> new ZiplineItem(new Item.Properties().stacksTo(64)));
 
 
 
