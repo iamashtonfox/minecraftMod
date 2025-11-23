@@ -18,10 +18,12 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, ShakyTurdMod.MOD_ID);
 
-    public static final RegistryObject<Block> ANCHOR = registerBlock("anchor",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops()
-                    .explosionResistance(15f).sound(SoundType.ANVIL)));
+    //whoops yeah no longer doing this one vvv
+
+//    public static final RegistryObject<Block> ANCHOR = registerBlock("anchor",
+//            () -> new Block(BlockBehaviour.Properties.of()
+//                    .strength(4f).requiresCorrectToolForDrops()
+//                    .explosionResistance(15f).sound(SoundType.ANVIL)));
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

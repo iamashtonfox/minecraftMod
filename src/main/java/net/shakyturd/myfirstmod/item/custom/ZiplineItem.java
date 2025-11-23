@@ -1,6 +1,7 @@
 package net.shakyturd.myfirstmod.item.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Leashable;
@@ -25,19 +26,20 @@ public class ZiplineItem extends Item {
     }
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
-        Level level = pContext.getLevel();
-        BlockPos blockpos = pContext.getClickedPos();
-        BlockState blockstate = level.getBlockState(blockpos);
-        if (blockstate.is(ModBlocks.ANCHOR.get())){
-            Player player = pContext.getPlayer();
-            if (!level.isClientSide && player != null) {
-                bindPlayerMobs(player, level, blockpos);
-            }
-
-        return InteractionResult.m_19078_(level.isClientSide);
-        } else{
-            return InteractionResult.PASS;
-        }
+//        Level level = pContext.getLevel();
+//        BlockPos blockpos = pContext.getClickedPos();
+//        BlockState blockstate = level.getBlockState(blockpos);
+//        if (blockstate.is(ModBlocks.ANCHOR.get())){ //for vanilla blocks use blockstate.is(BlockTags.BLOCK)
+//            Player player = pContext.getPlayer();
+//            if (!level.isClientSide && player != null) {
+//                bindPlayerMobs(player, level, blockpos);
+//            }
+//
+//        return InteractionResult.m_19078_(level.isClientSide);
+//        } else{
+//            return InteractionResult.PASS;
+//        }
+        return null; //remove this line if you ever come back to this idea
     }
     public static InteractionResult bindPlayerMobs(Player pPlayer, Level pLevel, BlockPos pPos) {
         LeashFenceKnotEntity ziplineanchorknotentity = null;

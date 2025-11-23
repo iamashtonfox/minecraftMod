@@ -1,4 +1,7 @@
 {
   "item.shakyturdmod.zipline": "Zipline",
-  "block.shakyturdmod.anchor": "Anchor"
+  "block.shakyturdmod.anchor": "Anchor",
+  "item.shakyturdmod.magic_crystal": "Magic Crystal",
+  "item.shakyturdmod.dormant_wooden_staff": "Unbound Wooden Staff",
+  "item.shakyturdmod.wooden_staff": "Wooden Staff"
 }
